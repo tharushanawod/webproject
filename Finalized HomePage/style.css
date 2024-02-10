@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root{
+  --theme-color: #3867d6;
+}
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #444;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 5rem;
+}
+
+body{
+  background:#ffffff;
+  margin: 0px;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: rgba(35, 50, 110, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.letteredlogo{                                        /*Style used for the whole 'EnchantEvent' logo goes here*/                                                     
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 25px 0px 25px 150px;
+}
+
+#logoId1{                                     /*Style used for the black colour part in the 'EnchantEvent' logo goes here*/    
+  color: darkcyan;
+  filter: drop-shadow(15px 0px 15px darkblue);
+  
+}
+
+#logoId2{                                     /*Style used for the black colour part in the 'EnchantEvent' logo goes here*/       
+  color: #fff;
+  padding-left: 0px;
+  filter: brightness(150%);
+  
+}
+
+.navbar{                                     /*Style used for the navigation bar inside the header section, goes here*/    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   
+  padding: 32.5px 150px 25px 0px;
+}
+
+.navbar a{                                  /*Style used for the anchor tags inside the navigation bar, goes here*/ 
+  font-size: 1.8rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.navbar a:hover {                   /*hover effects of those anchor tags*/
+  color: var(--theme-color);
+}
+
+.navbar a:last-child{
+    margin-right: 2rem;                     /* Add margin to the last hyperlink link */
+}
+
+.login-btn {        
+    border-radius: 10px;                        /*style used for the login button in the navbar starts here*/
+    border: 1px solid white;
+    margin-left: 30px;
+    padding: 7.5px 25px 7.5px 25px;
+    background-color: darkblue;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;    
+    
+}                                                /*style used for the login button in the navbar ends here*/
+
+.login-btn:hover {                                /*style used for the login button's hover effect in the navbar starts here*/
+    
+    background-color:  #6A5ACD;
+}                                                /*style used for the login button's hover effect in the navbar ends here*/
+
+
+.mainImage-container{                                /* Setting the standard height for the container */
+  position: relative;
+  width: 100%;
+  height: 100vh;                                 
+}
+
+.mainImage-container::before{                        /*Setting 1.jp as the background image done by here*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/1.jpg') center/cover no-repeat;   
+  filter: brightness(1);                                   
+}
+
+.text-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  z-index: 1;
+}
+
+.welcomePart{
+  font-size: 24px;
+  font-weight: 750;
+}
+
+.welcome-Message{
+  margin-top: 50px;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.message-lines{
+  margin-bottom: 10px;
+}
+
+.booknow-btn{
+  padding: 20px 100px 20px 100px;
+  margin-top: 75px;
+  border-radius: 7.5px;
+  background-color: #eee;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.booknow-btn:hover{
+  background-color: #87a5d3;
+  font-size: 18px;
+  cursor: pointer
+}
+
+#aboutContainer, #servicesContainer{                       /*This is the container for the Aboutus & EnchantedEvents logo and Services*/
+  margin-top: 10px;
+  padding-top: 2.5%;
+  padding-left: 7.5%;
+  padding-right: 2.5%;
+  padding-bottom: 25px;
+}
+
+#aboutContainer{
+  display: flex;
+}
+
+.aboutUs{                                                   /*This is the container for the Aboutus heading & the content of it*/
+  display: block;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.aboutUs-heading, .services-topic{                          /*Defines the 'About Us' heading and the services Headings*/
+  color: black; 
+  font-weight: 900; 
+  font-size: 50px;
+}
+
+.aboutUS-content, .services-content{                                           /*Defines the 'About US'content */
+  color: grey;
+  font-size: 17.5px;
+}
+
+
+.logo-container{                                            /*Defines the logo container*/
+  margin-top: 110px;
+  margin-left: 75px;
+  width: 40%;
+}
+
+#bigbox{                                                    /*Container for the our services*/
+  padding-bottom: 25px;
+}
+
+.box-container-topRow, .box-container-2ndRow{               /*Style used for the small 4 boxes inside service description*/
+  background-color: #eee;
+  margin-left: 5px;
+  margin-right: 15px;
+  padding: 10px 10px 20px 10px;
+  font-size: 15px;
+  width: 300px;
+  border-radius:10px ;
+  max-height: 400px;
+}
+
+.box-container-topRow{
+  margin-top: 65px;
+}
+
+.box-container-2ndRow{
+  margin-top: 25px;
+}
+
+.boxicon {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.footer {
+  position: fixed;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .letteredlogo {
+    padding: 25px 0px 25px 50px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .login-btn {
+    margin: 10px 0;
+  }
+
+  .mainImage-container::before {
+    background: url('images/1.jpg') center/cover no-repeat;
+  }
+
+  .text-overlay {
+    font-size: 20px;
+  }
+
+  .welcomePart {
+    font-size: 20px;
+  }
+
+  .welcome-Message {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .booknow-btn {
+    padding: 15px 50px;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+
+  #aboutContainer {
+    flex-direction: column;
+  }
+
+  .aboutUs, .logo-container {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .aboutUs-heading, .services-topic {
+    font-size: 40px;
+  }
+
+  .aboutUS-content, .services-content {
+    font-size: 15px;
+  }
+
+  .logo-container {
+    margin-top: 20px;
+  }
+
+  #bigbox {
+    padding-bottom: 10px;
+  }
+
+  .box-container-topRow, .box-container-2ndRow {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .boxicon {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+ 
+
+
