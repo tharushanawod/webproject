@@ -1,0 +1,236 @@
+:root{
+    --navyblue :#23336C;
+    --hcolor:rgba(255, 255, 255, 0.219);
+}
+
+
+*{
+    font-family: 'poppins';
+    padding: 0;
+    margin: 0;
+    font-weight:100;
+    
+
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.nav{
+    background-color: var(--navyblue);
+    height: 100vh;
+    /* width: 40%; */
+    border-radius: 0 3.5% 3.5% 0;
+    flex: 20%;
+    color: white;
+
+
+}
+.user{
+    background-color: rgba(255, 255, 255, 0.219);
+    /* background-opacity: 10%; */
+    margin-top: 15vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    border-radius: 13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user:hover{
+    box-shadow: 0 0 20px rgba(221, 219, 228, 0.247);
+    transition: box-shadow 0.95s;
+    background-color: rgba(255, 255, 255, 0.363);
+    transition: background-color 0.75s;
+
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.user p{
+    font-size: smaller;
+    opacity: 0.6;
+}
+
+.body{
+    flex:80%;
+    background-image: url('source/water.png');
+    background-position: left;
+    
+
+}
+.navigations li:first-child{
+    margin-top: 10px;
+}
+.navigations li{
+    list-style: none;
+    margin-left: 12%;
+    margin-right: 12%;
+    /* padding: 15px; */
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.navigations a{
+    text-decoration: none;
+    color: #f7f7f7;
+    opacity: 0.8;
+    font-style: normal;
+    font-weight: 0px;
+
+}
+.navigations li:last-child{
+    margin-top: 70%;
+    bottom: 1;
+}
+.navigations li:hover{
+    background-color: var(--hcolor);
+    transform: scale(1.05);
+    transition: transform 0.75s;
+    transition: background-color 0.75s;
+
+}
+
+.footer{
+    padding-left: 15px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    font-size: smaller;
+    font-weight: lighter;
+    /* margin-left: auto;
+    margin-right: auto; */
+    opacity: 0.5;
+}
+
+.navigations img{
+    width: 15px;
+    margin-right: 10px;
+    margin-right: 20px;
+    padding-left: 1.5cap;
+    margin-top: 6px;
+}
+
+
+
+.topbar img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float: right;
+    padding: 20px;
+    padding-right: 25px;
+    z-index: 1;
+    /* position: relative; */
+}
+
+.topbar .log{
+    z-index: 2;
+    float: right;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    margin-top: 62px;
+    right: 0;
+    margin-right: 10px;
+    border-radius: 8px;
+    /* box-shadow: 1cap #4e3939; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+
+
+.topbar .log p{
+    font-size: smaller;
+}
+
+/* .log{width: 100%;
+    height: auto;
+} */
+.containers{
+    margin-top: 13vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+.con1{
+    background-color: white;
+    width: 90vb;
+    height: 30vh;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin:10px;
+    margin-left: 15px;
+
+}
+.flex2{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.con2{
+    background-color: white;
+    width: 25%;
+    height: 70vh;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:10px;
+    margin:10px;
+    /* padding-left: 50px; */
+    /* padding-right: 10px; */
+}
+
+.con3{
+    background-color: white;
+    width: 55%;
+    height: 30vh;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:10px;
+    margin:10px;
+    margin-left: 15px;
+}
+.con4{
+    background-color: white;
+    width: 45%;
+    height: 30vh;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:10px;
+    margin:10px;
+}
+
+.con4:hover, .con3:hover, .con2:hover , .con1:hover{
+    box-shadow: 0 0 20px rgba(73, 141, 243, 0.541);
+    transition: box-shadow 0.5s;
+}
+
+#hours ,#minutes ,#seconds ,p{
+    font-size: 50px;
+    margin: 0%;
+    padding: 0%;
+
+}
+.clock{
+    margin-top: 1vh;
+    font-size: 50px;
+    background-color: #f7f7f775;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+.dateset {
+    font-size: 17px;
+}
