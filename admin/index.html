@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #2C3E50, #1f0664); /* Background Gradient */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 300px;
+            background: rgba(255, 255, 255, 0.295); /* Semi-transparent white background */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); /* Box Shadow */
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffffff; /* Header Color */
+            margin-bottom: 30px;
+        }
+
+        label {
+            color: #d9dce0; /* Label Color */
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+       
+
+        input[type="submit"].login-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #3498DB; /* Button Background Color */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.5s ease;
+        }
+
+        input[type="submit"].login-btn:hover {
+            background: #2980B9; /* Button Background Color on Hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Login</h2>
+        <form action="dbh/authentication.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="adusername" required><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="adpassword" required><br>
+            <input type="submit" value="Login" class="login-btn">
+        </form>
+    </div>
+</body>
+</html>

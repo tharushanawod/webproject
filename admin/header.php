@@ -19,7 +19,7 @@
                 </div>
                 <div class="navigations">
                     <ul>
-                        <li><a href="index.php"><img src="./source/vector(1).png" />    Dashboard</a></li>
+                        <li><a href="dash.php"><img src="./source/vector(1).png" />    Dashboard</a></li>
                         <li><a href="reservations.php"><img src="./source/vector.png" />    Reservations</a></li>
                         <li><a href="customer.php"><img src="./source/vector(2).png" />    Customers</a></li>
                         <li><a href="inbox.php"><img src="./source/vector5.png" />    Inbox</a></li>

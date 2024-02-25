@@ -13,8 +13,10 @@ $conn = mysqli_connect($server, $userName, $pwd,$dbName);
         die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT * FROM reservation";
-        $sql1 = "SELECT * FROM signup";
+        $sql = "SELECT * 
+        FROM `signup` 
+        RIGHT JOIN `reservation` ON `signup`.`row` = `reservation`.`cId`;";
+        // $sql1 = "SELECT * FROM signup";
 
         $runn = $conn->query($sql);
 
@@ -30,7 +32,7 @@ $conn = mysqli_connect($server, $userName, $pwd,$dbName);
             //         $cname=$row1['fName'];
             //     }
             // }
-            echo "<tr><td id ='oNo'>". $row["rid"]. "</td><td id='event'>" . $row["event"]. "</td><td id='customer'>" . $row['cId']. "</td><td id='date'>".$row["date"]."</td><td id='Time'>".$row["time"]."</td></tr>";
+            echo "<tr><td id ='oNo'>". $row["rid"]. "</td><td id='event'>" . $row["event"]. "</td><td id='customer'>" . $row['fName']. "</td><td id='date'>".$row["date"]."</td><td id='Time'>".$row["time"]."</td></tr>";
             
         }
         } else {
