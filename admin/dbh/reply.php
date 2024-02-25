@@ -1,7 +1,7 @@
 <?php
 
 require_once 'dbconnection.php';
-// session_start();
+session_start();
 $reply=$_POST['rep'];
 $msgID=$_SESSION['msgID'];
 
@@ -12,11 +12,12 @@ $msgID=$_SESSION['msgID'];
             
 
         if($runn){
+            echo "set na";
             header('location:../inbox.php');
         }
 
         
-        $conn->close();
+        
         
 
 ?>

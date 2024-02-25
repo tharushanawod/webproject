@@ -27,7 +27,7 @@
                         <li><a href="reservations.php"><img src="./source/vector.png" />    Reservations</a></li>
                         <li><a href="customer.php"><img src="./source/vector(2).png" />    Customers</a></li>
                         <li><a href="inbox.php"><img src="./source/vector5.png" />    Inbox</a></li>
-                        <li><a href=""><img src="./source/vector(3).png" />    Guidlines</a></li>
+                        <li><a href="guidlines.php"><img src="./source/vector(3).png" />    Guidlines</a></li>
                         <li><a href="./dbh/logout.php"><img src="./source/vector(5).png" />    Logout</a></li>
                     </ul>
                 </div>

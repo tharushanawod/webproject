@@ -347,3 +347,11 @@ section{
 /* .clock table tr td{
     width: 40px;
 } */
+
+.guid{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.guid b{
+    font-weight: bold;
+}
