@@ -23,9 +23,18 @@ include_once 'header.php';
         ?>
     </table>
 
-    <div class="buttonlist">
-        <button type="button">Delete</button>
-        
+    <div class="del">
+        <div class="delete-sec">
+            <h4>Enter  Customer ID Want to Remove</h4>
+            <form action="dbh/deleteuser.php" method="post">
+                <input type="number" name="cId">
+            
+        </div>
+        <div class="buttonlist">
+            <button type="submit">Delete</button>
+            
+        </div>
+        </form>
     </div>
 
 </div>

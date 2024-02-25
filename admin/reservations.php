@@ -5,7 +5,7 @@ include_once 'header.php';
     <div class="topic">Reservations</div>
     <table class='reserve'>
         <tr>
-            <th>Order No</th>
+            <th>Reservation No</th>
             <th>Event</th>
             <th>Customer</th>
             <th>Date</th>
@@ -23,11 +23,19 @@ include_once 'header.php';
         ?>
     </table>
 
-    <div class="buttonlist">
-        <button type="button">Delete</button>
-        
+    <div class="del">
+        <div class="delete-sec">
+            <h4>Enter  Revervation No. Want to Delete</h4>
+            <form action="dbh/deleteorder.php" method="post">
+                <input type="number" name="rId">
+            
+        </div>
+        <div class="buttonlist">
+            <button type="submit">Delete</button>
+            
+        </div>
+        </form>
     </div>
-
 </div>
 
 

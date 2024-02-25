@@ -165,6 +165,7 @@ section{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    margin-left: 50px;
 
 }
 .con1{
@@ -176,7 +177,34 @@ section{
     padding: 20px;
     margin:10px;
     margin-left: 15px;
+    box-sizing: border-box;
 
+}
+
+.con1 table{
+    padding-top: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* justify-content: space-between; */ 
+
+}
+.con1 table tr{
+    border-bottom: 1px solid #0000;
+    /* width: max-content; */
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+.con1 table tr:hover{
+    background-color: #f7f7f7;
+}
+
+.con1 table tr td{
+    border-bottom: 1px solid #0000;
+    background-color: #f7f7f731;
+    padding-left: 30px;
+    
 }
 .flex2{
     display: flex;
@@ -271,24 +299,49 @@ section{
     padding: 5px;
 }
 .buttonlist{
-    padding-left: 30px;
-    padding-top: 50px;
+    padding-left: 0px;
+    padding-top: 5px;
 }
 .buttonlist button{
     background-color: rgb(199, 9, 9);
     color: rgb(255, 255, 255);
-    border: 0;
+    /* border: 0; */
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 4px;
     font-weight: 700;
+    box-sizing: border-box;
+    border-color: rgb(199, 9, 9);
+    border: 1px solid;
 
 }
+
+.buttonlist button:hover{
+    background-color: white;
+    color: rgb(199, 9, 9);
+    transition: background-color 0.75s;
+    
+}
+
+.del{
+    margin: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+
 .count{
-    font-size: 60px;
-    padding-left:35%;
+    font-size: 80px;
+    padding-left:40%;
     padding-top: 10%;
+    box-sizing: border-box;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 /* .clock table tr td{

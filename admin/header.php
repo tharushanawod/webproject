@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Admin - ENHANCED</title>
 </head>
 <body>
     <section>
@@ -28,7 +28,7 @@
                         <li><a href="customer.php"><img src="./source/vector(2).png" />    Customers</a></li>
                         <li><a href="inbox.php"><img src="./source/vector5.png" />    Inbox</a></li>
                         <li><a href=""><img src="./source/vector(3).png" />    Guidlines</a></li>
-                        <li><a href=""><img src="./source/vector(5).png" />    Logout</a></li>
+                        <li><a href="./dbh/logout.php"><img src="./source/vector(5).png" />    Logout</a></li>
                     </ul>
                 </div>
                 <div class="footer">
@@ -41,7 +41,7 @@
                 <div class="topbar">
                     <!-- <div id="clock">
                     </div> -->
-                    <img src="./source/user.png" alt="" >
+                    <a href="../" target="_BLANK" alt="Redirrect to Home Page"><img src="./source/user.png" alt="Redirrect to Home Page" ></a>
                     <div class="log">
                         <center>
                         <span>UOC User</span>

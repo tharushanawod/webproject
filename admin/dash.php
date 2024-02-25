@@ -4,16 +4,30 @@ include_once 'header.php'
 <div class="containers">
     <div class="flex1">
         <div class="con1">
-            dashboard
+            Dashboard
+            <table>
+            <?php
+                require_once 'dbh/recentevents.php';
+            
+            ?>
+            </table>
         </div>
         <div class="flex2">
             <div class="con3">
-                customercount
-                <div class="count">56</div>
+                Customer Count
+                <div class="count">
+                    <?php
+                        require_once 'dbh/cuscounter.php';
+                    ?>
+                </div>
             </div>
             <div class="con4">
-                order count
-                <div class="count">59</div>
+                Order Count
+                <div class="count">
+                    <?php
+                        require_once 'dbh/ordercounter.php';
+                    ?>
+                </div>
             </div>
         </div>
     </div>
