@@ -14,7 +14,11 @@
             <div class="nav">
                 <div class="user">
                     <img src="./source/user.png">
-                    <span>UOC User
+                    <span>
+                        <?php
+                            require_once "./dbh/session.php";
+                        ?>
+                        <!-- UOC User -->
                     <p>Administrator</p></span>
                 </div>
                 <div class="navigations">
