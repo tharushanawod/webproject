@@ -95,10 +95,9 @@ body{
 
 .login-btn {        
     border-radius: 10px;                        /*style used for the login button in the navbar starts here*/
-    border: 1px solid white;
     margin-left: 30px;
     padding: 7.5px 25px 7.5px 25px;
-    background-color: darkblue;
+    background-color: darkcyan;
     font-size: 16px;
     color: #fff;
     cursor: pointer;    
