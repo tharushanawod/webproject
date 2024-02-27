@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    background: linear-gradient(to bottom right, white, rgba(35, 50, 110, 1), darkcyan, white);
+}
+
+.container-box{
+    font-family: arial;
+    width: 75%;
+    margin: 75px 125px 75px 125px;
+    padding: 2.5%;
+    padding-left: 5%;
+    box-shadow: 5px 5px 20px #eee;
+    background-color: #fff;
+    display: block;
+    border-radius: 10px;
+}
+
+.twoInOne, .singleObject{
+    width: 100%;
+    margin-top: 35px;
+}
+
+.twoInOne{
+    display: flex;
+}
+
+.twoInOne div{
+    width: 50%;
+}
+
+.twoInOne div input, .twoInOne div select{
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.singleObject textarea, .singleObject select{
+    width: 95%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btn-holder{
+    text-align: center;
+    width: 100%;
+}
+
+.btn{
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    box-sizing: border-box;
+    color: white;
+    background-color: navy;
+    font-size: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: darkblue;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 21px;
+    padding: 10px;
+}
+
+
+
+
+
+

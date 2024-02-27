@@ -1,5 +1,44 @@
 <?php
+    session_start();
     require("connection.php");
+
+    if (isset($_SESSION['userId'])) {
+        $userId = $_SESSION['userId'];
+    
+        // Fetch user details from the database
+        $query = "SELECT * FROM `tblusers` WHERE `userId` = '$userId'";
+        $result = mysqli_query($conn, $query);
+    
+        if ($result) {
+            if (mysqli_num_rows($result) == 1) {
+                $userDetails = mysqli_fetch_assoc($result);
+                // Now you can use $userDetails to display user information in your HTML
+                $userId = $userDetails['userId'];
+                $fname = $userDetails['fname'];
+                $lname = $userDetails['lname'];
+                $fullname = $fname . ' ' . $lname;
+                $email = $userDetails['email'];
+                $mobileNo = $userDetails['mobileNo'];
+            } 
+            
+            else {
+                // Handle the case when the user with the given ID is not found
+                die("User not found");
+            }
+        } 
+        
+        else {
+            // Handle the case when there's an error in the database query
+            die("Error fetching user details: " . mysqli_error($conn));
+        }
+        
+    } 
+    
+    else {
+        // Handle the case when 'userId' is not set in the session
+        die("User not authenticated");
+    }
+
 ?>
 
 
@@ -20,13 +59,13 @@
                     <div>
                         Full Name:
                         <br>
-                        <input type="text" name="name">
+                        <input type="text" name="name" value = "<?php echo htmlspecialchars($fullname); ?>">
                     </div>
 
                     <div>
                         Email Address:
                         <br>
-                        <input type="email" name ="email">
+                        <input type="email" name ="email" value = "<?php echo htmlspecialchars($email); ?>">
                     </div>
                 </div>
 
@@ -34,7 +73,7 @@
                     <div>
                         Contact NO:
                         <br>
-                        <input type="tel" name = "mobileNo">
+                        <input type="tel" name = "mobileNo" value = "<?php echo htmlspecialchars($mobileNo); ?>">
                     </div>
 
                     <div>
@@ -72,7 +111,7 @@
                             <option value="8 p.m">8 p.m</option>
                             <option value="9 p.m">9 p.m</option>
                             <option value="10 p.m">10 p.m</option>
-                            <option value="10 p.m">10 p.m</option>
+                            <option value="11 p.m">11 p.m</option>
                             <option value="12 a.m">12 a.m</option>
                           </select>
                     </div>
@@ -104,7 +143,7 @@
                             <option value="8 p.m">8 p.m</option>
                             <option value="9 p.m">9 p.m</option>
                             <option value="10 p.m">10 p.m</option>
-                            <option value="10 p.m">10 p.m</option>
+                            <option value="11 p.m">11 p.m</option>
                             <option value="12 a.m">12 a.m</option>
                           </select>
                     </div>
@@ -174,7 +213,7 @@
 
 
         // Query to insert data into the database
-        $query = "INSERT INTO tblbooking(Name, Email, MobileNumber, EventDate, EventStartingtime, EventEndingtime, EventType, VenueAddress, AdditionalInformation) VALUES ('$name', '$email', '$mobileNo', '$eventDate','$startTime', '$endTime', '$eventType', '$address', '$info')";
+        $query = "INSERT INTO tblbooking(userId, Name, Email, MobileNumber, EventDate, EventStartingtime, EventEndingtime, EventType, VenueAddress, AdditionalInformation, status) VALUES ('$userId', '$name', '$email', '$mobileNo', '$eventDate','$startTime', '$endTime', '$eventType', '$address', '$info', 'Pending')";
 
         // Perform the query
         $result = mysqli_query($conn, $query);

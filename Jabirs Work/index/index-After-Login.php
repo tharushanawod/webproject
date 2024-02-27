@@ -31,7 +31,7 @@
             <a href="#home">Home</a>
             <a href="#aboutContainer">About Us</a>
             <a href="#servicesContainer">Our Services</a>
-            <a href="#gallery">Manage Event</a>
+            <a href="../manage event/manage event.php" target="_blank">My Bookings</a>
             <a href="../viewProfile/view.php" target="_blank">View Profile</a>
             <a href="../viewProfile/edit.php" target="_blank">Edit Profile</a>
             <form method ="POST">
@@ -73,7 +73,7 @@
         </div>
 
         <div>
-          <a href="../addBooking/booknow.php" target="_blank">
+          <a href="../addBooking/bk_updated.php" target="_blank">
             <button class="booknow-btn">Book Now</button>
           </a>
         </div>
